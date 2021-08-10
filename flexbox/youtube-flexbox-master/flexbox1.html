@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Display</title>
+  <style>
+    .container {
+      background-color: blue;
+      /*2*/
+      /* padding: 1rem */
+      /*3 para ver la caja contenedora y luego lo comento*/
+      display: flex;
+      /*4 hay 2 valores flex e inline-flex se van a linear y como la direccion por defecto es fila se van a ver en el mismo renglon...similar a float*/
+      display: inline-flex;
+      /*5 ahora ya se comportan en linea*/
+    }
+
+    .item {
+      background-color: lightblue;
+      /*2*/
+    }
+  </style>
+</head>
+
+<body>
+  <section class="container">
+    <!--1-->
+    <article class="item">Flex Item 1</article>
+    <!--1-->
+    <article class="item">Flex Item 2</article>
+    <!--1-->
+    <article class="item">Flex Item 3</article>
+    <!--1-->
+  </section>
+  <section class="container">
+    <!--5-->
+    <article class="item">Flex Item 1</article>
+    <!--5-->
+    <article class="item">Flex Item 2</article>
+    <!--5-->
+    <article class="item">Flex Item 3</article>
+    <!--5-->
+  </section>
+</body>
+
+</html>
