@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    html {
+      box-sizing: border-box;
+      font-size: 16px;
+      font-family: sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    *,
+    *::after,
+    *::before {
+      box-sizing: inherit;
+    }
+
+    a[href="#top"] {
+      margin: 1rem;
+      display: block;
+      font-size: 2rem;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    h2 {
+      margin-top: 50vh;
+      text-align: center;
+    }
+
+    img {
+      margin: auto;
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+
+    .menu {
+      margin-bottom: 100vh;
+      font-size: 125%;
+    }
+
+    .menu li {
+      margin-bottom: 1rem;
+    }
+
+    .container {
+      margin: 0 auto;
+      width: 80%;
+      /* height: 80vh; */
+      background-color: #222;
+      border: medium solid #000;
+    }
+
+    .item {
+      padding: 1rem;
+      font-size: 1.25rem;
+      background-color: #666;
+      border: medium solid #999;
+    }
+
+    /*     .container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(3, 12rem);
+    }
+
+    .item:nth-child(2) {
+      grid-column: 2/4;
+    } */
+
+    .container {
+      display: grid;
+      /* Grid de 2cx3r */
+      grid-template-columns: 1fr 200px;
+      grid-template-rows: 100px repeat(2, 1fr) 60px;
+      grid-template-areas:
+        "header   header"
+        "content  sidebar"
+        "content  sidebar"
+        "footer     footer";
+    }
+
+    .header {
+      grid-area: header;
+    }
+
+    .content {
+      grid-area: content;
+    }
+
+    .sidebar {
+      grid-area: sidebar;
+    }
+
+    .footer {
+      grid-area: footer;
+    }
+  </style>
+</head>
+
+<body>
+  <section class="container">
+    <article class="item header">grid item 1</article>
+    <article class="item content">grid item 2</article>
+    <article class="item aside">grid item 3</article>
+    <article class="item footer">grid item 4</article>
+    <!--     <article class="item">grid item 5</article>
+    <article class="item">grid item 6</article>
+    <article class="item">grid item 7</article>
+    <article class="item">grid item 8</article>
+    <article class="item">grid item 9</article>
+    <article class="item">grid item 10</article>
+    <article class="item">grid item 11</article>
+    <article class="item">grid item 12</article>
+    <article class="item">grid item 13</article>
+    <article class="item">grid item 14</article>
+    <article class="item">grid item 15</article>
+    <article class="item">grid item 16</article>
+    <article class="item">grid item 17</article>
+    <article class="item">grid item 18</article>
+    <article class="item">grid item 19</article> -->
+  </section>
+</body>
+
+</html>
